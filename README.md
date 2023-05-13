@@ -36,16 +36,24 @@ below are also accessible via external_ids.
 Examples:
 
 URL to a dataseries:
+```
 http://localhost:8080/api/dataseries/by-external-id/dataseries/<dataseries-external-id>/
+```
 
 URL to a float fact under a dataseries:
+```
 http://localhost:8080/api/dataseries/by-external-id/dataseries/<dataseries-external-id>/floatfact/<floatfact-external-id>/
+```
 
 URL to the datapoint endpoint of a dataseries:
+```
 http://localhost:8080/api/dataseries/by-external-id/dataseries/<dataseries-external-id>/datapoint/
+```
 
 Url to a specific datapoint of a dataseries:
+```
 http://localhost:8080/api/dataseries/by-external-id/dataseries/<dataseries-external-id>/datapoint/<datapoint-external-id>
+```
 
 # License
 
