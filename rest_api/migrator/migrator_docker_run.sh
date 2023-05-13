@@ -1,0 +1,3 @@
+# exec bash build.sh <your BUILDID>
+exec docker run -e NF_COMPOSE_LITE=yes -e NF_COMPOSE_PASSWORD="<your NF_COMPOSE_PASSWORD here>" -e NF_COMPOSE_USER="<your NF_COMPOSE_USER here>" -e NF_COMPOSE_URL= "<your NF_COMPOSE_URL here>" -e NF_COMPOSE_DOMAIN_ALIASES='{"nodered.dev.local:3880": "nodered.dev.<your NF_COMPOSE_USER here>.local:3880"}' <migrator docker image>:<your BUILDID>
+# exec bash push.sh <your BUILDID>
