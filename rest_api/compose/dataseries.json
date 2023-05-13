@@ -4,12 +4,12 @@
         "data_series": {
             "allow_extra_fields": false,
             "backend": "DYNAMIC_SQL_NO_HISTORY",
-            "external_id": "my_demo_rest_api",
+            "external_id": "my_demo_dataseries",
             "extra_config": {
                 "auto_clean_history_after_days": -1,
                 "auto_clean_meta_model_after_days": -1
             },
-            "name": "my_demo_rest_api"
+            "name": "my_demo_dataseries"
         },
         "group_permissions": [],
         "indexes": [],
