@@ -8,6 +8,7 @@ This sample shows how to setup a simple REST API
 2. run `bash dev_load_main.sh`
 3. admire your created rest dataseries with their own dataseries
 4. Login to your NF Compose instance (e.g. http://localhost:8080/api) with user `rest_api` and password `rest_api` (if you haven't changed these)
+5. Admire rest api at http://localhost:8080/api/dataseries/by-external-id/dataseries/my_demo_rest_api/datapoint/ (note the by-external-id)
 
 # Next steps
 
