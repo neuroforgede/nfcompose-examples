@@ -13,7 +13,7 @@ git clone https://github.com/neuroforgede/nfcompose
 Switch to the `deploy` folder and setup the playground:
 
 ```bash
-cd deploy
+cd deploy/local
 bash setup_playground.sh
 ```
 
