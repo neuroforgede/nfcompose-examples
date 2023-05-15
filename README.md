@@ -10,7 +10,7 @@ To start off, clone the original repository:
 git clone https://github.com/neuroforgede/nfcompose
 ```
 
-Switch to the `deploy` folder and setup the playground:
+Switch to the `deploy/local` folder and setup the playground:
 
 ```bash
 cd deploy/local
