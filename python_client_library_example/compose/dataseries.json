@@ -1,0 +1,45 @@
+[
+    {
+        "consumers": [],
+        "data_series": {
+            "allow_extra_fields": false,
+            "backend": "DYNAMIC_SQL_NO_HISTORY",
+            "external_id": "my_demo_dataseries",
+            "extra_config": {
+                "auto_clean_history_after_days": -1,
+                "auto_clean_meta_model_after_days": -1
+            },
+            "name": "my_demo_dataseries"
+        },
+        "group_permissions": [],
+        "indexes": [],
+        "structure": {
+            "boolean_facts": [],
+            "dimensions": [],
+            "file_facts": [
+                {
+                    "external_id": "some_file",
+                    "name": "some_file",
+                    "optional": true
+                }
+            ],
+            "float_facts": [
+                {
+                    "external_id": "some_optional_float",
+                    "name": "some_optional_float",
+                    "optional": true
+                },
+                {
+                    "external_id": "some_float",
+                    "name": "some_float",
+                    "optional": false
+                }
+            ],
+            "image_facts": [],
+            "json_facts": [],
+            "string_facts": [],
+            "text_facts": [],
+            "timestamp_facts": []
+        }
+    }
+]
