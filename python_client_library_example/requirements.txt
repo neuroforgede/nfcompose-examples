@@ -1,1 +1,1 @@
-https://github.com/neuroforgede/nfcompose/releases/download/release%2F2.1.0-beta.6/compose_client-2.1.0-beta.tar.gz
+https://github.com/neuroforgede/nfcompose/releases/download/release%2F2.1.0-beta.30/compose_client-2.1.0-beta.tar.gz
