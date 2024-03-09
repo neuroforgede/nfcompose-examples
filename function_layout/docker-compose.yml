@@ -1,0 +1,40 @@
+x-nfcompose-credentials-env:
+  NF_COMPOSE_USER: "admin"
+  NF_COMPOSE_PASSWORD: "admin"
+
+services:
+  func_a:
+    build:
+      context: ./functions/func_a
+      dockerfile: Dockerfile
+    develop:
+      watch:
+        - action: sync
+          path: ./functions/func_a
+          target: /app
+          ignore:
+            - venv
+    networks:
+      nfcompose:
+        aliases:
+          - funca.local
+  func_b:
+    build:
+      context: ./functions/func_b
+      dockerfile: Dockerfile
+    develop:
+      watch:
+        - action: sync
+          path: ./functions/func_b
+          target: /app
+          ignore:
+            - venv
+    networks:
+      nfcompose:
+        aliases:
+          - funcb.local
+
+networks:
+  nfcompose:
+    name: "nf-compose_nfcompose_consumers"
+    external: true
