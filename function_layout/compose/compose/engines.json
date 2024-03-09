@@ -1,1 +1,12 @@
-[]
+[
+    {
+        "engine": {
+            "external_id": "httpendpoint",
+            "upstream": "http://httpendpoint.local:8000"
+        },
+        "group_permissions": [],
+        "secret": {
+            "secret": "FS3uzrQ6Ls77Ew9r4c2y5MDdqM27qUCwnyvehClhTJmVffzEpjmX2utSUaJsGCH4"
+        }
+    }
+]

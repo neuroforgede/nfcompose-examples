@@ -1,1 +1,22 @@
-[]
+[
+    {
+        "group_permissions": [],
+        "http_endpoint": {
+            "engine": "httpendpoint",
+            "external_id": "httpendpoint_GET",
+            "method": "GET",
+            "path": "/api/flow/impl/httpendpoint/",
+            "public": false
+        }
+    },
+    {
+        "group_permissions": [],
+        "http_endpoint": {
+            "engine": "httpendpoint",
+            "external_id": "httpendpoint_POST",
+            "method": "POST",
+            "path": "/api/flow/impl/httpendpoint/",
+            "public": false
+        }
+    }
+]

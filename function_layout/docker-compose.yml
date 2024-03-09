@@ -1,40 +1,49 @@
-x-nfcompose-credentials-env:
+x-nfcompose-credentials-env: &x-nfcompose-credentials-env
   NF_COMPOSE_USER: "admin"
   NF_COMPOSE_PASSWORD: "admin"
+  NF_COMPOSE_URL: "http://skipper.internal.local:8000"
 
 services:
-  func_a:
+  process:
     build:
-      context: ./functions/func_a
+      context: ./functions/process
       dockerfile: Dockerfile
     develop:
       watch:
         - action: sync
-          path: ./functions/func_a
+          path: ./functions/process
           target: /app
           ignore:
             - venv
+    environment:
+      <<: *x-nfcompose-credentials-env
     networks:
-      nfcompose:
+      nfcompose_consumers:
         aliases:
-          - funca.local
-  func_b:
+          - process.local
+        
+  httpendpoint:
     build:
-      context: ./functions/func_b
+      context: ./functions/httpendpoint
       dockerfile: Dockerfile
     develop:
       watch:
         - action: sync
-          path: ./functions/func_b
+          path: ./functions/httpendpoint
           target: /app
           ignore:
             - venv
+    environment:
+      <<: *x-nfcompose-credentials-env
     networks:
       nfcompose:
         aliases:
-          - funcb.local
+          - httpendpoint.local
 
 networks:
   nfcompose:
+    name: "nf-compose_nfcompose"
+    external: true
+  nfcompose_consumers:
     name: "nf-compose_nfcompose_consumers"
     external: true
