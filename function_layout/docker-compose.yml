@@ -5,6 +5,7 @@ x-nfcompose-credentials-env: &x-nfcompose-credentials-env
 
 services:
   process:
+    image: docker.neuroforge.de/skipper/functions/process:latest
     build:
       context: ./functions/process
       dockerfile: Dockerfile
@@ -23,6 +24,7 @@ services:
           - process.local
         
   httpendpoint:
+    image: docker.neuroforge.de/skipper/functions/process:latest
     build:
       context: ./functions/httpendpoint
       dockerfile: Dockerfile
